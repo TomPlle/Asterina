@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Staff - Asterina</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deepBlue: '#0066b2',
+                        turquoise: '#2bc0d1',
+                        coral: '#f07151',
+                        oceanDark: '#0a2240'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans antialiased selection:bg-turquoise selection:text-white">
+
+    <!-- 1. BARRE DE NAVIGATION (ONGLET LE STAFF ACTIF) -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <!-- Logo d'origine -->
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <img src="images/Nouveau_logo_complet.jpg" alt="Asterina Logo" class="h-12 w-auto object-contain rounded-lg shadow-sm">
+                <span class="font-extrabold text-xl tracking-wider bg-gradient-to-r from-deepBlue to-turquoise bg-clip-text text-transparent hidden sm:inline">ASTÉRINA</span>
+            </a>
+            
+            <!-- Menu de navigation -->
+            <nav class="hidden lg:flex space-x-1 bg-slate-100/80 p-1.5 rounded-full border border-slate-200/50">
+                <a href="index.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Club</a>
+                <a href="La_Piscine.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Piscine</a>
+                <a href="Le_Staff.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-deepBlue bg-white shadow-sm transition-all duration-200">Le Staff</a>
+                <a href="Les_Sorties.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Sorties</a>
+                <a href="Les_telechargements.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Téléchargement</a>
+                <a href="Les_Formations.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Formation</a>
+            </nav>
+
+            <a href="mailto:ASTERINA.MEAUX@gmail.com" class="bg-coral text-white px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider shadow-lg shadow-coral/20 hover:shadow-xl hover:shadow-coral/30 hover:-translate-y-0.5 transition-all duration-200">
+                Faire un baptême
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. EN-TÊTE DE LA PAGE -->
+    <section class="bg-gradient-to-b from-oceanDark to-slate-900 text-white py-12 relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-deepBlue/10 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center lg:text-left">
+            <span class="text-turquoise text-xs font-bold uppercase tracking-widest bg-white/5 border border-white/10 px-4 py-1.5 rounded-full">Bénévoles & Passionnés</span>
+            <h1 class="text-4xl font-black tracking-tight mt-3">Le STAFF</h1>
+        </div>
+    </section>
+
+    <!-- 3. SECTION DU STAFF (CARTES DU BUREAU ET DES MONITEURS) -->
+    <section class="py-20 max-w-5xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+            
+            <!-- Bloc 1 : Le Bureau -->
+            <div class="group bg-white rounded-3xl p-6 border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between text-center">
+                <div>
+                    <a href="Le_Bureau.html" class="block overflow-hidden rounded-2xl mb-6 shadow-md border border-slate-100">
+                        <img src="images/Les_Moniteurs.jpg" alt="Le Bureau Asterina" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                    </a>
+                    <h2 class="text-2xl font-extrabold text-oceanDark mb-2 group-hover:text-deepBlue transition-colors">Le Bureau</h2>
+                    <p class="text-slate-500 text-sm max-w-sm mx-auto leading-relaxed">
+                        Découvrez l'équipe administrative et de direction qui gère l'organisation quotidienne de notre club associatif.
+                    </p>
+                </div>
+                <div class="mt-8">
+                    <a href="Le_Bureau.html" class="inline-flex items-center justify-center bg-slate-50 text-oceanDark font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-xl border border-slate-100 group-hover:bg-deepBlue group-hover:text-white group-hover:border-transparent transition-all duration-200 w-full">
+                        Voir les membres du Bureau
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bloc 2 : Les Monitrices et Les Moniteurs -->
+            <div class="group bg-white rounded-3xl p-6 border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between text-center">
+                <div>
+                    <a href="Les_moniteurs.html" class="block overflow-hidden rounded-2xl mb-6 shadow-md border border-slate-100">
+                        <img src="images/plongeur1.jpg" alt="Les Moniteurs Asterina" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                    </a>
+                    <h2 class="text-2xl font-extrabold text-oceanDark mb-2 group-hover:text-turquoise transition-colors">Les Monitrices & Moniteurs</h2>
+                    <p class="text-slate-500 text-sm max-w-sm mx-auto leading-relaxed">
+                        Rencontres avec notre équipe d'encadrants brevetés d'État et fédéraux, entièrement dédiés à vos formations et baptêmes.
+                    </p>
+                </div>
+                <div class="mt-8">
+                    <a href="Les_moniteurs.html" class="inline-flex items-center justify-center bg-slate-50 text-oceanDark font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-xl border border-slate-100 group-hover:bg-turquoise group-hover:text-white group-hover:border-transparent transition-all duration-200 w-full">
+                        Découvrir l'équipe technique
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. LOGOS PARTENAIRES -->
+    <section class="bg-white py-10 border-t border-slate-100">
+        <div class="max-w-5xl mx-auto px-6 flex flex-wrap justify-center items-center gap-8 md:gap-14 opacity-75 grayscale hover:grayscale-0 transition-all">
+            <a href="https://ffessm.fr/" target="_blank"><img src="images/logo_ffessm.png" alt="FFESSM" class="h-16 w-auto object-contain"></a>
+            <a href="https://plongee-fsgt.org/" target="_blank"><img src="images/Documents_PDF/fsgt-plongee_trans.png" alt="FSGT Plongée" class="h-16 w-auto object-contain"></a>
+            <a href="https://www.ville-meaux.fr/" target="_blank"><img src="images/img43273c645cc24.jpg" alt="Ville de Meaux" class="h-16 w-auto object-contain"></a>
+            <a href="https://www.seine-et-marne.fr/fr" target="_blank"><img src="images/img43273c3abe004.jpg" alt="Seine et Marne" class="h-16 w-auto object-contain"></a>
+            <a href="https://www.sports.gouv.fr/" target="_blank"><img src="images/img43273c278ec8b.jpg" alt="Ministère des Sports" class="h-16 w-auto object-contain"></a>
+        </div>
+    </section>
+
+    <!-- 5. PIED DE PAGE ET COPYRIGHT -->
+    <footer class="bg-oceanDark text-slate-400 py-8 text-center text-xs border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Asterina Meaux. Tous droits réservés.</p>
+            <p class="font-medium">Design moderne basé sur la charte de &copy;2022 - <strong class="text-white">LV</strong></p>
+        </div>
+    </footer>
+
+</body>
+</html>

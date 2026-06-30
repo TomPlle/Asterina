@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asterina - Club de Plongée Sous-Marine</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deepBlue: '#0066b2',
+                        turquoise: '#2bc0d1',
+                        coral: '#f07151',
+                        oceanDark: '#0a2240'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans antialiased selection:bg-turquoise selection:text-white">
+
+    <!-- 1. BARRE DE NAVIGATION PREMIUM -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <!-- Logo d'origine intégré -->
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <img src="images/Nouveau_logo_complet.jpg" alt="Asterina Logo" class="h-12 w-auto object-contain rounded-lg shadow-sm">
+                <span class="font-extrabold text-xl tracking-wider bg-gradient-to-r from-deepBlue to-turquoise bg-clip-text text-transparent hidden sm:inline">ASTÉRINA</span>
+            </a>
+            
+            <!-- Vos 6 rubriques exactes -->
+            <nav class="hidden lg:flex space-x-1 bg-slate-100/80 p-1.5 rounded-full border border-slate-200/50">
+                <a href="index.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-deepBlue bg-white shadow-sm transition-all duration-200">Club</a>
+                <a href="La_Piscine.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Piscine</a>
+                <a href="Le_Staff.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Le Staff</a>
+                <a href="Les_Sorties.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Sorties</a>
+                <a href="Les_telechargements.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Téléchargement</a>
+                <a href="Les_Formations.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Formation</a>
+            </nav>
+
+            <!-- Alerte/Action Baptême -->
+            <a href="mailto:ASTERINA.MEAUX@gmail.com" class="bg-coral text-white px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider shadow-lg shadow-coral/20 hover:shadow-xl hover:shadow-coral/30 hover:-translate-y-0.5 transition-all duration-200 animate-pulse">
+                Faire un baptême
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. SECTION HERO / MESSAGE DE BIENVENUE -->
+    <section class="relative bg-oceanDark text-white py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Bloc de texte principal (Left Article d'origine) -->
+            <div class="lg:col-span-7 space-y-6">
+                <span class="inline-flex items-center gap-2 bg-turquoise/20 text-turquoise text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-turquoise/30">
+                    Depuis 1983 • Meaux
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
+                    Bienvenue sur le site du Club de Plongée Sous-Marine Astérina.
+                </h1>
+                <div class="space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
+                    <p>Nous sommes un club associatif de la loi de 1901 de plongée subaquatique créé en 1983.</p>
+                    <p class="font-semibold text-turquoise">Nous sommes affiliés à la FFESSM ainsi qu’à la FSGT depuis 2019.</p>
+                    <p>Seul, en famille ou entre amis, du débutant au confirmé, nous organisons toute l’année des baptêmes dès l’âge de 8 ans ainsi que des formations à partir de 14 ans.</p>
+                    <p class="italic text-slate-400">Notre équipe de moniteurs bénévoles vous guidera sur le chemin du plaisir de la plongée sous-marine.</p>
+                </div>
+            </div>
+
+            <!-- Blocs Médias de droite (Asides d'origine : Calendrier & Salon) -->
+            <div class="lg:col-span-5 space-y-8 flex flex-col items-center lg:items-end">
+                <!-- Bloc Calendrier / Planning -->
+                <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/10 w-full max-w-[340px] text-center group">
+                    <a href="images/Documents_PDF/PLANNING_2025-2026_26-03-18.pdf" target="_blank" class="block overflow-hidden rounded-xl mb-3">
+                        <img src="images/Calendrier_Club_Nvx.jpg" alt="Calendrier Club" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-300">
+                    </a>
+                    <span class="text-xs text-slate-400 block font-mono">MAJ : 18/03/2026</span>
+                </div>
+
+                <!-- Bloc Salon de la plongée -->
+                <div class="bg-white/5 p-4 rounded-2xl border border-white/5 w-full max-w-[340px] text-center">
+                    <a href="https://www.salon-de-la-plongee.com" target="_blank" class="block overflow-hidden rounded-xl">
+                        <img src="images/Salon_plongee_2026.jpg" alt="Salon de la plongée 2026" class="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. INFOS ENTRAÎNEMENTS ET SORTIES (BENTO GRIDS) -->
+    <section class="py-16 max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Entraînements -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-deepBlue/10 rounded-xl flex items-center justify-center text-deepBlue text-xl mb-4">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-oceanDark mb-3">Horaires & Entraînements</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Nos entraînements ont lieu de mi-septembre à fin juin (hors vacances scolaires).
+                    </p>
+                    <ul class="text-xs space-y-2 bg-slate-50 p-4 rounded-xl border border-slate-100 text-slate-700">
+                        <li><strong class="text-deepBlue">Mercredis & Vendredis :</strong> 21h00 à 23h00 <span class="text-[10px] text-slate-400">(heure de sortie de l’établissement)</span></li>
+                        <li><strong class="text-deepBlue">Vestiaires :</strong> Dès 20h30 (fermeture des accès à 21h00-21h15).</li>
+                    </ul>
+                </div>
+                <div class="mt-4 pt-4 border-t border-slate-100 text-xs font-semibold text-rose-500 flex items-center gap-2">
+                    <i class="fa-solid fa-calendar-xmark"></i> Pas d'entraînement durant les vacances de la zone C.
+                </div>
+            </div>
+
+            <!-- Fosse Lagny -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-turquoise/10 rounded-xl flex items-center justify-center text-turquoise text-xl mb-4">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-oceanDark mb-3">Fosse de Lagny</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Nous organisons régulièrement des entraînements spécifiques à la fosse de Lagny sur Marne pour travailler vos techniques jusqu'à 20m de profondeur.
+                    </p>
+                </div>
+                <a href="mailto:fosse.asterina@gmail.com" class="w-full text-center bg-slate-100 text-oceanDark font-bold text-xs uppercase tracking-wider py-3 rounded-xl hover:bg-turquoise hover:text-white transition-all">
+                    Réserver une Fosse
+                </a>
+            </div>
+
+            <!-- Sorties Mer -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-coral/10 rounded-xl flex items-center justify-center text-coral text-xl mb-4">
+                        <i class="fa-solid fa-ship"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-oceanDark mb-3">Sorties « Mer »</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Chaque année, profitez d'occasions privilégiées pour pratiquer la plongée plaisir ou valider vos niveaux techniques directement en milieu naturel avec nos moniteurs.
+                    </p>
+                </div>
+                <a href="Les_Sorties.html" class="w-full text-center bg-oceanDark text-white font-bold text-xs uppercase tracking-wider py-3 rounded-xl hover:bg-opacity-90 transition-all">
+                    Voir les sorties
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. ACTIONS RAPIDES & TROMBINOSCOPE REVISITÉ -->
+    <section class="py-12 bg-slate-50 border-y border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-xs uppercase tracking-widest font-extrabold text-slate-400 text-center mb-10">Contacts & Liens Utiles</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                
+                <!-- Président -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/60 shadow-sm text-center flex flex-col items-center">
+                    <div class="w-24 h-24 overflow-hidden rounded-xl mb-4 border border-slate-100">
+                        <img src="images/TROMBI/img59baacefc87ec.jpg" alt="Le Président" class="w-full h-full object-cover">
+                    </div>
+                    <a href="mailto:ASTERINA.MEAUX@gmail.com" class="text-sm font-bold text-oceanDark hover:text-deepBlue transition-colors">
+                        Contacter le Président
+                    </a>
+                </div>
+
+                <!-- Secrétaire -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/60 shadow-sm text-center flex flex-col items-center">
+                    <div class="w-24 h-24 overflow-hidden rounded-xl mb-4 border border-slate-100">
+                        <img src="images/TROMBI/img5b580d37a994a.jpg" alt="Le Secrétaire" class="w-full h-full object-cover">
+                    </div>
+                    <a href="mailto:Secreteriat.asterina@gmail.com" class="text-sm font-bold text-oceanDark hover:text-deepBlue transition-colors">
+                        Contacter le Secrétaire
+                    </a>
+                </div>
+
+                <!-- Fosse Réserver -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/60 shadow-sm text-center flex flex-col items-center">
+                    <div class="w-24 h-24 overflow-hidden rounded-xl mb-4 border border-slate-100">
+                        <img src="images/fosse_lagny.jpg" alt="Fosse de Lagny" class="w-full h-full object-cover">
+                    </div>
+                    <a href="mailto:fosse.asterina@gmail.com" class="text-sm font-bold text-oceanDark hover:text-deepBlue transition-colors">
+                        Réserver une Fosse
+                    </a>
+                </div>
+
+                <!-- Inscription -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/60 shadow-sm text-center flex flex-col items-center">
+                    <div class="w-24 h-24 overflow-hidden rounded-xl mb-4 border border-slate-100">
+                        <img src="images/inscription.jpg" alt="Inscription" class="w-full h-full object-cover">
+                    </div>
+                    <a href="Les_telechargements.html" class="text-sm font-bold text-oceanDark hover:text-deepBlue transition-colors">
+                        Vous inscrire
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. ANNONCES ET APPELS À L'ACTION (ANCIEN TEXTE CLIGNOTANT) -->
+    <section class="py-16 max-w-4xl mx-auto px-6 text-center space-y-6">
+        <h3 class="text-slate-500 font-medium text-lg italic">
+            « N’hésitez pas à prendre contact avec nous, vous y serez accueillis dans une ambiance amicale et respectueuse… »
+        </h3>
+        
+        <div class="p-6 bg-white rounded-2xl border border-slate-200/60 shadow-sm space-y-4 max-w-xl mx-auto">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Liens directs</span>
+                <!-- Compteur de visites conservé discrètement -->
+                <img src="http://www.mon-compteur.fr/html_c01genv2-239863-1" alt="Compteur" class="opacity-70">
+            </div>
+            <div class="text-left space-y-2">
+                <p class="text-sm font-semibold text-oceanDark flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span> 
+                    Vous souhaitez faire un baptême ? 
+                    <a href="mailto:ASTERINA.MEAUX@gmail.com" class="text-coral underline font-bold ml-1 hover:text-opacity-80">Cliquez ici</a>
+                </p>
+                <p class="text-sm font-semibold text-oceanDark flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-blue-600 animate-ping"></span> 
+                    Rejoignez-nous sur Facebook : 
+                    <a href="https://www.facebook.com/profile.php?id=61551118720046" target="_blank" class="text-deepBlue underline font-bold ml-1 hover:text-opacity-80">Ici</a>
+                </p>
+                <p class="text-sm font-semibold text-slate-600 flex items-center gap-2">
+                    <i class="fa-solid fa-map-pin text-slate-400"></i>
+                    Consultez l'agenda de la commune :
+                    <a href="https://www.ville-meaux.fr/fr/liste-des-evenements.html" target="_blank" class="text-slate-900 underline font-bold ml-1 hover:text-slate-700">Événements à Meaux</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. LOGOS AFFILIATIONS ET PARTENAIRES -->
+    <section class="bg-white py-10 border-t border-slate-100">
+        <div class="max-w-5xl mx-auto px-6 flex flex-wrap justify-center items-center gap-8 md:gap-14 opacity-75 grayscale hover:grayscale-0 transition-all">
+            <a href="https://ffessm.fr/" target="_blank"><img src="images/logo_ffessm.png" alt="FFESSM" class="h-16 w-auto object-contain"></a>
+            <a href="https://plongee-fsgt.org/" target="_blank"><img src="images/Documents_PDF/fsgt-plongee_trans.png" alt="FSGT Plongée" class="h-16 w-auto object-contain"></a>
+            <a href="https://www.ville-meaux.fr/" target="_blank"><img src="images/img43273c645cc24.jpg" alt="Ville de Meaux" class="h-16 w-auto object-contain"></a>
+            <a href="https://www.seine-et-marne.fr/fr" target="_blank"><img src="images/img43273c3abe004.jpg" alt="Seine et Marne" class="h-16 w-auto object-contain"></a>
+            <a href="https://www.sports.gouv.fr/" target="_blank"><img src="images/img43273c278ec8b.jpg" alt="Ministère des Sports" class="h-16 w-auto object-contain"></a>
+        </div>
+    </section>
+
+    <!-- 7. PIED DE PAGE -->
+    <footer class="bg-oceanDark text-slate-400 py-8 text-center text-xs border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Asterina Meaux. Tous droits réservés.</p>
+            <p class="font-medium">Design moderne basé sur la charte de &copy;2022 - <strong class="text-white">LV</strong></p>
+        </div>
+    </footer>
+
+</body>
+</html>
