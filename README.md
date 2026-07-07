@@ -10,22 +10,23 @@
 
 ## 📋 Présentation du projet
 
-Ce projet consiste en une modernisation complète de l'architecture front-end du site de l'association de plongée **Astérina**. L'objectif principal était de remplacer l'ancienne structure rigide en tableaux HTML et feuilles de styles legacy par une interface utilisateur épurée, sémantique et parfaitement adaptée aux smartphones et tablettes, tout en conservant l'intégralité du contenu historique (médias, trombinoscopes, documents).
+Ce projet consiste en une modernisation complète de l'architecture front-end du site de l'association de plongée **Astérina**. L'objectif était de transformer une structure héritée en une interface utilisateur moderne, sémantique et optimisée pour tous les appareils, tout en améliorant l'expérience de navigation pour les membres.
 
 ### ✨ Fonctionnalités clés
-*   **Trombinoscopes dynamiques :** Section du personnel et des moniteurs réorganisée sous forme de grilles de cartes interactives avec catégorisation par niveau de diplôme (badges E1 à E4).
-*   **Médiathèque des sorties :** Valorisation des archives vidéo (.mp4) et des albums photo des voyages mythiques (Corse, Mexique, Afrique du Sud).
-*   **Espace Téléchargements :** Centralisation ergonomique des fiches d'inscription (Adultes/Enfants), règlements intérieurs, statuts de l'association et cours théoriques.
-*   **Design Fluide :** Utilisation de l'effet *backdrop-blur* (flou d'arrière-plan sur le menu collant), de transitions douces au survol et d'une palette de couleurs inspirée de l'univers océanique.
+* **Navigation Intuitive :** Menu collant avec effet *backdrop-blur* pour une expérience de lecture immersive.
+* **Espace Téléchargements Interactif :** Système d'accordéons dynamiques permettant d'accéder aux dossiers d'inscription, fiches médicales, et archives (Bureau/Moniteurs) de manière organisée.
+* **Cursus de Formation Structuré :** Page dédiée aux formations, utilisant des cartes interactives détaillant les prérequis pour chaque niveau (Baptême au Niveau III), avec une section spéciale pour les encadrants.
+* **Trombinoscopes & Médias :** Grilles de cartes pour le staff et galerie de photos des sorties, valorisant les archives historiques du club.
 
 ---
 
 ## 🛠️ Technologies utilisées
 
-*   **HTML5** — Structure sémantique et accessibilité.
-*   **Tailwind CSS** — Framework utilitaire pour un design *mobile-first* ultra-rapide sans feuilles de style volumineuses.
-*   **FontAwesome v6** — Banque d'icônes vectorielles pour enrichir l'interface graphique.
-*   **Google Fonts** — Typographie *Plus Jakarta Sans* & *Inter* pour une lisibilité maximale.
+* **HTML5** — Structure sémantique et accessibilité.
+* **Tailwind CSS** — Framework utilitaire pour un design *mobile-first* performant.
+* **JavaScript (Vanilla)** — Gestion légère de l'interactivité (accordéons).
+* **FontAwesome v6** — Icônes vectorielles pour une interface claire.
+* **Google Fonts** — Typographie *Plus Jakarta Sans* & *Inter*.
 
 ---
 
@@ -34,18 +35,18 @@ Ce projet consiste en une modernisation complète de l'architecture front-end du
 Voici l'organisation des principaux fichiers et dossiers de ce dépôt :
 
 ```text
-├── index.html                           # Page d'accueil (Club)
-├── La_Piscine.html                      # Informations sur l'accès aux bassins
-├── Le_Staff.html                        # Hub d'accès au bureau et aux moniteurs
-├── Le_Bureau.html                       # Trombinoscope des membres du bureau élu
-├── Les_moniteurs.html                   # Liste de l'équipe pédagogique (E1 à E4)
-├── Les_Sorties.html                     # Calendrier des voyages et archives multimédias
-├── Les_telechargements.html             # Accès aux formulaires PDF et cours théoriques
-├── Les_Formations.html                  # Cursus de formation dispensés
+├── index.html                  # Page d'accueil (Club)
+├── La_Piscine.html             # Informations sur l'accès aux bassins
+├── Le_Staff.html               # Hub d'accès au bureau et aux moniteurs
+├── Le_Bureau.html              # Trombinoscope des membres du bureau élu
+├── Les_moniteurs.html          # Liste de l'équipe pédagogique (E1 à E4)
+├── Les_Sorties.html            # Calendrier des voyages et archives multimédias
+├── Les_telechargements.html    # Accès aux formulaires, cours théoriques et CR
+├── Les_Formations.html         # Cursus de formation (Niveaux 1 à III)
 │
-├── images/                              # Dossier des ressources graphiques
-│   ├── Nouveau_logo_complet.jpg         # Logo officiel d'Astérina
-│   ├── TROMBI/                          # Photos d'identité de l'équipe
-│   ├── Photo_plongee/                   # Galerie photos des sorties clubs
-│   ├── video/                           # Fichiers vidéos (.mp4) des 40 ans et voyages
-│   └── Documents_PDF/                   # Statuts, règlements et logos fédéraux
+├── images/                     # Dossier des ressources graphiques
+│   ├── Nouveau_logo_complet.jpg # Logo officiel d'Astérina
+│   ├── TROMBI/                 # Photos d'identité de l'équipe
+│   ├── Photo_plongee/          # Galerie photos des sorties clubs
+│   ├── video/                  # Fichiers vidéos (.mp4)
+│   └── Documents_PDF/          # Statuts, règlements et logos fédéraux
