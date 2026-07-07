@@ -50,4 +50,5 @@ Voici l'organisation des principaux fichiers et dossiers de ce dépôt :
 │   ├── TROMBI/                 # Photos d'identité de l'équipe
 │   ├── Photo_plongee/          # Galerie photos des sorties clubs
 │   ├── video/                  # Fichiers vidéos (.mp4)
+│   ├── cours_theoriques/       # Dossier de l'ensemble des cours théoriques
 │   └── Documents_PDF/          # Statuts, règlements et logos fédéraux
