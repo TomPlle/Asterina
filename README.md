@@ -45,7 +45,8 @@ Voici l'organisation des principaux fichiers et dossiers de ce dépôt :
 ├── Les_Formations.html         # Cursus de formation (Niveaux 1 à III)
 │
 ├── images/                     # Dossier des ressources graphiques
-│   ├── Nouveau_logo_complet.jpg # Logo officiel d'Astérina
+│   ├── Logos/                  # Dossier de l'ensemble des logos utilisés
+│   ├── index/                  # Dossier des images décoratives de la page index.html
 │   ├── TROMBI/                 # Photos d'identité de l'équipe
 │   ├── Photo_plongee/          # Galerie photos des sorties clubs
 │   ├── video/                  # Fichiers vidéos (.mp4)
