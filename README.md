@@ -48,6 +48,8 @@ Voici l'organisation des principaux fichiers et dossiers de ce dépôt :
 │   ├── Logos/                  # Dossier de l'ensemble des logos utilisés
 │   ├── index/                  # Dossier des images décoratives de la page index.html
 │   ├── TROMBI/                 # Photos d'identité de l'équipe
+│       ├── Bureau/             # Photos d'identité du Bureau
+│       └── Moniteurs/          # Photos d'identité des Moniteurs
 │   ├── Photo_plongee/          # Galerie photos des sorties clubs
 │   ├── video/                  # Fichiers vidéos (.mp4)
 │   ├── cours_theoriques/       # Dossier de l'ensemble des cours théoriques
