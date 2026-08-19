@@ -44,6 +44,7 @@ Voici l'organisation des principaux fichiers et dossiers de ce dépôt :
 ├── prochaines_sorties.html     # Prochaines sorties du club prévues
 ├── Les_telechargements.html    # Accès aux formulaires, cours théoriques et CR
 ├── Les_Formations.html         # Cursus de formation (Niveaux 1 à III)
+├── Mentions_Legales.html       # Page contenant les Mentions Légales
 │
 ├── documents/                  # Dossier contenant tous les documents
 │   ├── Sorties/                # Dossier de documents pour les sorties
