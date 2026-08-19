@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <link rel="icon" type="image/jpeg" href="./images/Logos/logo_asterina.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales - Asterina Meaux</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deepBlue: '#0066b2',
+                        turquoise: '#2bc0d1',
+                        coral: '#f07151',
+                        oceanDark: '#0a2240'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans antialiased selection:bg-turquoise selection:text-white flex flex-col min-h-screen">
+
+    <!-- 1. BARRE DE NAVIGATION AVEC MENU BURGER MOBILE -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <img src="./images/Logos/logo_asterina.png" alt="Asterina Logo" class="h-12 w-auto object-contain rounded-lg shadow-sm">
+            </a>
+            
+            <!-- Navigation Bureau (Masquée sur mobile) -->
+            <nav class="hidden lg:flex space-x-1 bg-slate-100/80 p-1.5 rounded-full border border-slate-200/50">
+                <a href="index.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Club</a>
+                <a href="La_Piscine.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Piscine</a>
+                <a href="Le_Staff.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Le Staff</a>
+                <a href="Les_Sorties.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Sorties</a>
+                <a href="Les_telechargements.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Téléchargement</a>
+                <a href="Les_Formations.html" class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-oceanDark hover:bg-white hover:shadow-sm transition-all duration-200">Formation</a>
+            </nav>
+
+            <!-- Bouton Action & Burger Mobile -->
+            <div class="flex items-center space-x-4">
+                <a href="mailto:ASTERINA.MEAUX@gmail.com" class="hidden sm:inline-block bg-coral text-white px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider shadow-lg shadow-coral/20 hover:shadow-xl hover:shadow-coral/30 hover:-translate-y-0.5 transition-all duration-200">
+                    Faire un baptême
+                </a>
+                
+                <!-- Bouton Burger Mobile -->
+                <button onclick="toggleMobileMenu()" class="lg:hidden w-10 h-10 flex items-center justify-center text-oceanDark bg-slate-100 rounded-xl hover:bg-slate-200 transition-colors" aria-label="Ouvrir le menu">
+                    <i id="burger-icon" class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Déroulant Mobile -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 bg-white px-6 py-4 space-y-2 shadow-inner">
+            <a href="index.html" class="block px-4 py-3 rounded-xl text-sm font-bold text-oceanDark hover:bg-slate-50 transition-colors">Club</a>
+            <a href="La_Piscine.html" class="block px-4 py-3 rounded-xl text-sm font-bold text-oceanDark hover:bg-slate-50 transition-colors">Piscine</a>
+            <a href="Le_Staff.html" class="block px-4 py-3 rounded-xl text-sm font-bold text-oceanDark hover:bg-slate-50 transition-colors">Le Staff</a>
+            <a href="Les_Sorties.html" class="block px-4 py-3 rounded-xl text-sm font-bold text-oceanDark hover:bg-slate-50 transition-colors">Sorties</a>
+            <a href="Les_telechargements.html" class="block px-4 py-3 rounded-xl text-sm font-bold text-oceanDark hover:bg-slate-50 transition-colors">Téléchargement</a>
+            <a href="Les_Formations.html" class="block px-4 py-3 rounded-xl text-sm font-bold text-oceanDark hover:bg-slate-50 transition-colors">Formation</a>
+            <a href="mailto:ASTERINA.MEAUX@gmail.com" class="block sm:hidden text-center bg-coral text-white px-4 py-3 rounded-xl font-bold text-sm uppercase tracking-wider mt-2">
+                Faire un baptême
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. EN-TÊTE DE LA PAGE -->
+    <section class="bg-gradient-to-b from-oceanDark to-slate-900 text-white py-14 relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-deepBlue/10 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <span class="text-turquoise text-xs font-bold uppercase tracking-widest bg-white/5 border border-white/10 px-4 py-1.5 rounded-full">Informations Réglementaires</span>
+            <h1 class="text-4xl font-black tracking-tight mt-3">Mentions Légales & Confidentialité</h1>
+            <p class="text-slate-400 text-sm mt-2">Conformité à la loi LCEN, au RGPD et au respect de la vie privée.</p>
+        </div>
+    </section>
+
+    <!-- 3. CONTENU PRINCIPAL -->
+    <main class="max-w-4xl mx-auto px-6 py-16 flex-grow w-full space-y-8">
+        
+        <!-- Éditeur du site (Association) -->
+        <div class="bg-white border border-slate-200/80 p-8 rounded-3xl shadow-sm space-y-4">
+            <div class="flex items-center space-x-3 text-deepBlue border-b border-slate-100 pb-4">
+                <i class="fa-solid fa-building text-xl"></i>
+                <h2 class="text-xl font-bold text-oceanDark">1. Éditeur du site</h2>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                Le présent site internet est édité par l'association loi 1901 :
+            </p>
+            <ul class="text-slate-700 text-sm space-y-2 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                <li><strong>Nom de l'association :</strong> Astérina Meaux (Club de Plongée Sous-Marine)</li>
+                <li><strong>Siège social :</strong> hôtel de ville de MEAUX, 77100 Meaux, France</li>
+                <li><strong>Numéro RNA :</strong> W771001644</li>
+                <li><strong>Email de contact :</strong> <a href="mailto:ASTERINA.MEAUX@gmail.com" class="text-deepBlue font-semibold hover:underline">ASTERINA.MEAUX@gmail.com</a></li>
+                <li><strong>Directeur de la publication :</strong> La Présidente de l'association Astérina Meaux</li>
+            </ul>
+        </div>
+
+        <!-- Hébergement -->
+        <div class="bg-white border border-slate-200/80 p-8 rounded-3xl shadow-sm space-y-4">
+            <div class="flex items-center space-x-3 text-deepBlue border-b border-slate-100 pb-4">
+                <i class="fa-solid fa-server text-xl"></i>
+                <h2 class="text-xl font-bold text-oceanDark">2. Hébergement du site</h2>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                Le site internet est hébergé par :
+            </p>
+            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-slate-700 text-sm space-y-1">
+                <p><strong>Hébergeur :</strong> OVHcloud</p>
+                <p><strong>Adresse :</strong> 2 rue Kellermann, 59100 Roubaix, France</p>
+                <p><strong>Site Web :</strong> <a href="https://www.ovhcloud.com" target="_blank" class="text-deepBlue font-semibold hover:underline">[Lien du site de l'hébergeur]</a></p>
+            </div>
+        </div>
+
+        <!-- Propriété intellectuelle -->
+        <div class="bg-white border border-slate-200/80 p-8 rounded-3xl shadow-sm space-y-4">
+            <div class="flex items-center space-x-3 text-deepBlue border-b border-slate-100 pb-4">
+                <i class="fa-solid fa-copyright text-xl"></i>
+                <h2 class="text-xl font-bold text-oceanDark">3. Propriété intellectuelle & Droit à l'image</h2>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.
+            </p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                Les photographies, logos et trombinoscopes présents sur le site sont la propriété exclusive d'<strong>Astérina Meaux</strong> ou font l'objet d'une autorisation d'utilisation délivrée par leurs propriétaires respectifs (membres du club, fédérations FFESSM / FSGT, partenaires institutionnels).
+            </p>
+        </div>
+
+        <!-- Protection des données personnelles (RGPD) -->
+        <div class="bg-white border border-slate-200/80 p-8 rounded-3xl shadow-sm space-y-4">
+            <div class="flex items-center space-x-3 text-deepBlue border-b border-slate-100 pb-4">
+                <i class="fa-solid fa-user-shield text-xl"></i>
+                <h2 class="text-xl font-bold text-oceanDark">4. Protection des données personnelles (RGPD)</h2>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés :
+            </p>
+            <ul class="list-disc list-inside text-slate-600 text-sm space-y-2 leading-relaxed">
+                <li>Les informations recueillies via le bouton de contact e-mail sont destinées uniquement à la gestion des inscriptions et à la réponse aux demandes d'information.</li>
+                <li>Aucune donnée personnelle n'est cédée, vendue ou transmise à des tiers à des fins commerciales.</li>
+                <li>Vous disposez d'un droit d'accès, de rectification, de modification et de suppression des données qui vous concernent. Pour exercer ce droit, veuillez adresser un courrier électronique à : <a href="mailto:ASTERINA.MEAUX@gmail.com" class="text-deepBlue font-semibold hover:underline">ASTERINA.MEAUX@gmail.com</a>.</li>
+            </ul>
+        </div>
+
+        <!-- Cookies -->
+        <div class="bg-white border border-slate-200/80 p-8 rounded-3xl shadow-sm space-y-4">
+            <div class="flex items-center space-x-3 text-deepBlue border-b border-slate-100 pb-4">
+                <i class="fa-solid fa-cookie-bite text-xl"></i>
+                <h2 class="text-xl font-bold text-oceanDark">5. Cookies & Liens Hypertextes</h2>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                Ce site est un site vitrine statique qui n'utilise aucun cookie de traçage publicitaire ou de mesure d'audience nécessitant votre consentement préalable.
+            </p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                Les liens hypertextes mis en place en direction d'autres sites web (partenaires, fédérations, ville de Meaux) ne sauraient engager la responsabilité d'Astérina Meaux quant à leur contenu.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- 4. PARTENAIRES & AFFILIATIONS -->
+    <section class="bg-white py-10 border-t border-slate-100">
+        <div class="max-w-5xl mx-auto px-6 flex flex-wrap justify-center items-center gap-8 md:gap-14 opacity-75 grayscale hover:grayscale-0 transition-all">
+            <a href="https://ffessm.fr/" target="_blank"><img src="./images/Logos/logo_ffessm.png" alt="FFESSM" class="h-16 w-auto object-contain"></a>
+            <a href="https://plongee-fsgt.org/" target="_blank"><img src="./images/Logos/logo_fsgt.png" alt="FSGT Plongée" class="h-16 w-auto object-contain"></a>
+            <a href="https://www.ville-meaux.fr/" target="_blank"><img src="./images/Logos/logo_meaux.png" alt="Ville de Meaux" class="h-16 w-auto object-contain"></a>
+            <a href="https://www.seine-et-marne.fr/fr" target="_blank"><img src="./images/Logos/logo_seine_et_marne.png" alt="Seine et Marne" class="h-16 w-auto object-contain"></a>
+            <a href="https://www.sports.gouv.fr/" target="_blank"><img src="./images/Logos/logo_ministere_de_la_jeunesse_et_des_sports.png" alt="Ministère des Sports" class="h-16 w-auto object-contain"></a>
+        </div>
+    </section>
+
+    <!-- 5. PIED DE PAGE -->
+    <footer class="bg-oceanDark text-slate-400 py-8 text-center text-xs border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Asterina Meaux. Tous droits réservés. — <a href="Mentions_Legales.html" class="text-turquoise hover:underline">Mentions Légales</a></p>
+            <p class="font-medium">Design moderne basé sur la charte de &copy;2022 - <a href="https://www.linkedin.com/in/tom-pelloile-548193357/" target="_blank"><strong class="text-white">Tom Pelloile</strong></a></p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT JAVASCRIPT DU MENU BURGER -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('burger-icon');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+    </script>
+</body>
+</html>
